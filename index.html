@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Budget Calculator</title>
+</head>
+<body>
+
+  <div id="container">
+
+    <header>
+      <h1 id="header">Budget Calculator</h1>
+      <h4 id="subheader">Take control of your spending.</h4>
+    </header>
+   
+    <div id="rules">Please enter your best estimates for all applicable fields below.</div>
+
+    <div class="sections">
+      <h3>Income</h3>
+      <div class="itemized">
+        <div class="items">
+          <div class="item">Monthly Pay:</div>
+          <input type="text" id="monthlyPay" placeholder="$0" value="0">
+        </div>
+        <div class="items">
+          <div class="item">Other Monthly:</div>
+          <input type="text" id="otherMonthly" placeholder="$0" value="0">
+        </div>
+      </div>
+    </div>
+
+    <div class="sections">
+      <h3>Monthly Expenses</h3>
+      <div class="itemized">
+        <div class="items">
+          <div class="item">Food (groceries, dining out, takeout):</div>
+          <input type="text" id="food" placeholder="$0" value="0">
+        </div>
+        <div class="items">
+          <div class="item">Housing (mortgage, rent, taxes, insurance):</div>
+          <input type="text" id="housing" placeholder="$0" value="0">
+        </div>
+        <div class="items">
+          <div class="item">Clothing:</div>
+          <input type="text" id="clothing" placeholder="$0" value="0">
+        </div>
+        <div class="items">
+          <div class="item">Household (utilities, cell phone, cable, maintenance, etc.):</div>
+          <input type="text" id="household" placeholder="$0" value="0">
+        </div>
+        <div class="items">
+          <div class="item">Transportation (public transportation, parking, gas, etc.):</div>
+          <input type="text" id="transportation" placeholder="$0" value="0">
+        </div>
+        <div class="items">
+          <div class="item">Health (insurance, medications, doctor visits, etc.):</div>
+          <input type="text" id="health" placeholder="$0" value="0">
+        </div>
+        <div class="items">
+          <div class="item">Loans (interest/principal payments, etc.):</div>
+          <input type="text" id="loans" placeholder="$0" value="0">
+        </div>
+        <div class="items">
+          <div class="item">Personal (gifts, charity, entertainment, hobbies, etc.):</div>
+          <input type="text" id="personal" placeholder="$0" value="0">
+        </div>
+        <div class="items">
+          <div class="item">Misc. (child care, tuition, etc.):</div>
+          <input type="text" id="misc" placeholder="$0" value="0">
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <button id="submit">Submit</button>
+    </footer>
+
+  </div>
+  <script src="javascript.js"></script>
+
+</body>
+</html>
