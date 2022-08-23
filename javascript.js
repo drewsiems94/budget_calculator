@@ -28,6 +28,7 @@ submit.addEventListener('click', function () {
   } else {
     remaining.textContent = `You're currently breaking even.`
   }
+  remaining.setAttribute("style", "text-align: center; font-size: 20px; margin: 15px; font-weight: bold");
 });
 
 function calcIncome(income1, income2) {
