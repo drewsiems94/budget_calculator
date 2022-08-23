@@ -10,6 +10,7 @@ const loans = document.getElementById('loans');
 const personal = document.getElementById('personal');
 const misc = document.getElementById('misc');
 const submit = document.getElementById('submit');
+const remaining = document.getElementById('remaining');
 
 let totalIncome = 0;
 let totalExpenses = 0;
@@ -19,6 +20,14 @@ submit.addEventListener('click', function () {
   totalExpenses = calcExpenses(parseInt(food.value), parseInt(housing.value), parseInt(clothing.value),
     parseInt(household.value), parseInt(transportation.value), parseInt(health.value), parseInt(loans.value),
     parseInt(personal.value), parseInt(misc.value));
+  remainder = calcRemainder(totalIncome, totalExpenses);
+  if (remainder > 0) {
+    remaining.textContent = `You're under budget by: $${remainder}`
+  } else if (remainder < 0) {
+    remaining.textContent = `You're over budget by: $${remainder * -1}`
+  } else {
+    remaining.textContent = `You're currently breaking even.`
+  }
 });
 
 function calcIncome(income1, income2) {
